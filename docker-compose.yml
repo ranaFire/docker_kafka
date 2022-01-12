@@ -45,5 +45,3 @@ services:
       - zookeeper
       - kafka_node1
     restart: always
-
-#https://developpaper.com/deploying-kafka-service-with-docker-compose/
