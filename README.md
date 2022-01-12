@@ -18,7 +18,7 @@ create /kafka-manager/mutex/leases ""Created /kafka-manager/mutex/leases
 start zookeeper (port:2181):
 ```bin/zookeeper-server-start.sh config/zookeeper.properties```
 
-start kafka (9092):
+start kafka (Port 9092):
 ```bin/kafka-server-start.sh config/server.properties```
 
 create kafka topic: 
