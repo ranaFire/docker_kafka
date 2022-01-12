@@ -1,8 +1,11 @@
 # docker_kafka
 
 ### Change IP address according to your machine ip address
+```
+KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://192.168.70.170:9092
+```
 ### Get the zookeeper console
-```docker exec -it zookeeper sh```
+```docker exec -it wurstmeister/zookeeper sh```
 ### Then Run the following command
 ```
 ./bin/zkCli.sh
