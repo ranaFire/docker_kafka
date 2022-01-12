@@ -1,6 +1,6 @@
 # Docker_kafka
 
-### Change IP address according to your machine ip address
+### Change IP address in the docker-compose.yml fileaccording to your machine ip address
 ```
 KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://192.168.70.170:9092
 ```
