@@ -1,4 +1,4 @@
-# docker_kafka
+# Docker_kafka
 
 ### Change IP address according to your machine ip address
 ```
@@ -13,3 +13,21 @@ create /kafka-manager/mutex ""Created /kafka-manager/mutex
 create /kafka-manager/mutex/locks ""Created /kafka-manager/mutex/locks
 create /kafka-manager/mutex/leases ""Created /kafka-manager/mutex/leases
 ```
+
+
+start zookeeper (port:2181):
+```bin/zookeeper-server-start.sh config/zookeeper.properties```
+
+start kafka (9092):
+```bin/kafka-server-start.sh config/server.properties```
+
+create kafka topic: 
+```bin/kafka-topics.sh --create --topic mytopic --bootstrap-server localhost:9092```
+
+start console producer: 
+```bin/kafka-console-producer.sh --topic mytopic  --bootstrap-server localhost:9092```
+//enter msg//
+
+start console consumer: 
+```bin/kafka-console-comsumer.sh --topic mytopic --bootstrap-server localhost:9092```
+//it will show here//
