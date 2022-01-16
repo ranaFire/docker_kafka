@@ -31,5 +31,5 @@ start console producer:
 //enter msg//
 
 start console consumer: 
-```bin/kafka-console-comsumer.sh --topic mytopic --bootstrap-server localhost:9092```
+```bin/kafka-console-consumer.sh --topic mytopic --bootstrap-server localhost:9092```
 //it will show here//
