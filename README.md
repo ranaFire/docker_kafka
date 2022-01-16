@@ -23,6 +23,8 @@ start kafka (Port 9092):
 
 create kafka topic: 
 ```bin/kafka-topics.sh --create --topic mytopic --bootstrap-server localhost:9092```
+bin/kafka-topics.sh --create --topic mytopic --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+
 
 start console producer: 
 ```bin/kafka-console-producer.sh --topic mytopic  --bootstrap-server localhost:9092```
